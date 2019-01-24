@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/publictracking.css: {}
+      css/slick.css: {}
+      css/slick-theme.css: {}
+global-scripts:
+  version: VERSION
+  js:
+    js/site.js: {}
+    js/slick.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+      

@@ -61,6 +61,7 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
+    "extra": {
         "patchLevel": {
             "drupal/core": "-p2"
         },

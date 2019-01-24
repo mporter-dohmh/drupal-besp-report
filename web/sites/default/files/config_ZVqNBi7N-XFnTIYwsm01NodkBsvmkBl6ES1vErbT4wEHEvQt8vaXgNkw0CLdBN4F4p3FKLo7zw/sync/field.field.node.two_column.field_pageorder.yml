@@ -1,0 +1,23 @@
+uuid: 7eea9bac-c84f-4e58-9445-b37e5c4a7ff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pageorder
+    - node.type.two_column
+id: node.two_column.field_pageorder
+field_name: field_pageorder
+entity_type: node
+bundle: two_column
+label: pageorder
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,9 @@
+uuid: d9c55fec-f1a4-4f2d-837d-5a16d819dd42
+langcode: en
+status: true
+dependencies: {  }
+name: sitenames
+vid: sitenames
+description: ''
+hierarchy: 0
+weight: 0

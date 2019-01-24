@@ -1,0 +1,47 @@
+uuid: fda302e4-3f45-4e68-ac98-a1bdda4725d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_one_column
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.body_text
+    - paragraphs.paragraphs_type.embedded_code
+    - paragraphs.paragraphs_type.one_column
+  module:
+    - entity_reference_revisions
+id: paragraph.one_column.field_one_column
+field_name: field_one_column
+entity_type: paragraph
+bundle: one_column
+label: 'One Column'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      body_text: body_text
+      embedded_code: embedded_code
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 5
+      body_text:
+        enabled: true
+        weight: 6
+      one_column:
+        weight: 7
+        enabled: false
+      embedded_code:
+        enabled: true
+        weight: 8
+      two_columns:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

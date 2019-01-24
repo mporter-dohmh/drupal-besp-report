@@ -1,0 +1,534 @@
+@media print {
+    li > a[href]:after {
+        content: " (" attr(href) ")" !important;
+    }
+}
+
+h3 {
+    color: #72706d;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+@media print {
+    .containerdata {
+        *zoom: 1;
+        max-width: 940px;
+        _width: 940px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .containerdata:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .containerdata:before,
+    .containerdata:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+
+    .containerdata:after {
+        clear: both;
+    }
+    /*#contentdata {
+                width: 100%;
+                max-width: 1048px;
+                height: 80%;
+                max-height: 1048px;
+            }*/
+    /*#contentdata:last-child {
+            page-break-after: none;
+            page-break-before: none;
+            page-break-after: none;
+            page-break-inside: avoid;
+        }*/
+}
+
+.ui-autocomplete-loading {
+    background: white url("EPHTimages/ui-anim_basic_16x16.gif") right center no-repeat;
+}
+
+#city {
+    width: 25em;
+}
+
+/*
+.ui-menu-item {
+    font-size: 14px;
+}
+
+
+.ui-menu-item {
+    font-size: 14px;
+}*/
+
+</style > <style type="text/css" > body.modal-open {
+    overflow-y: auto;
+    margin: 0;
+}
+
+.modal {
+    overflow: auto;
+}
+
+.CompletionListCssClass {
+    font-size: 14px;
+    color: #000;
+    padding: 3px 5px;
+    border: 1px solid #999;
+    background: #fff;
+    width: 300px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    margin-left: 0px;
+}
+
+.subunderline:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+    #dvtabcontainer2 table,
+    #dvtabcontainer2 thead,
+    #dvtabcontainer2 tbody,
+    #dvtabcontainer2 th,
+    #dvtabcontainer2 td,
+    #dvtabcontainer2 tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #dvtabcontainer2 thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #dvtabcontainer2 td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+    }
+
+    #dvtabcontainer2 td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 5%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    #dvtabcontainer2 .firsttd:nth-of-type(1) {
+        display: none;
+    }
+}
+
+body {
+    background-color: #f2efeb;
+}
+
+ol > li > a:hover {
+    color: #72706D;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+tr > td > a:hover {
+    color: white;
+}
+
+.main {
+    width: 100%;
+    background: transparent;
+}
+
+.main .inner {
+    text-align: left;
+    min-width: 180px;
+    min-height: 140px;
+    background: transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.main .inner .tile {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 126px;
+    margin: 5px;
+    vertical-align: middle;
+    width: 130px;
+    border-radius: 100%;
+    /* behavior: url(js/PIE-1.0.0/PIE.htc);*/
+}
+
+#main:hover {
+    background: white;
+}
+
+.mainIndicator {
+    width: 100%;
+    background: transparent;
+}
+
+.mainIndicator .innerIndicator {
+    text-align: left;
+    min-width: 280px;
+    min-height: 180px;
+    background: transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.mainIndicator .innerIndicator .tileIndicator {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 146px;
+    margin: 5px;
+    vertical-align: middle;
+    width: 150px;
+    border-radius: 100%;
+    /*  behavior: url(js/PIE-1.0.0/PIE.htc);*/
+}
+
+#main:hover {
+    background: white;
+}
+
+li {
+    list-style-type: circle;
+}
+
+#contentdata li {
+    list-style-type: disc;
+}
+
+.WaterMarkSearch {
+    color: Gray;
+    font-size: 10pt !important;
+}
+
+.IndicatorLinks {
+    text-decoration: none;
+}
+
+#dvindicatorr > div col-md-9 col-lg-9 col-sm-9 col-xs-12 Classhovers > ul > li > a:hover {
+    /*background-color: red;*/
+    text-decoration: none;
+    font-size: 50px;
+    color: Red;
+}
+
+.IndicatorLinks:hover {
+    text-decoration: underline;
+    /* font-size: 22px;*/
+    color: Red;
+}
+
+</style > <style type="text/css" > .bcrumb_home:after,
+.bcrumb_topic:before,
+.bcrumb_topic:after,
+.bcrumb_subtopic:after,
+.bcrumb_subtopic:before,
+.bcrumb_indicator:before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    z-index: -1;
+    width: 50%;
+}
+
+.bcrumb_home:after,
+.bcrumb_topic:before {
+    border-top: 3px dotted silver;
+}
+
+.bcrumb_topic:after,
+.bcrumb_subtopic:after,
+.bcrumb_subtopic:before,
+.bcrumb_indicator:before {
+    border-top: 3px solid #72706D;
+}
+
+.bcrumb_home:after,
+.bcrumb_topic:after,
+.bcrumb_subtopic:after {
+    left: 50%;
+}
+
+.bcrumb_topic:before,
+.bcrumb_subtopic:before,
+.bcrumb_indicator:before {
+    right: 50%;
+}
+
+.bcrumb_home,
+.bcrumb_topic,
+.bcrumb_subtopic,
+.bcrumb_indicator {
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.bc_icon {
+    background: red;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.bc_icon_Env {
+    background: #b2c1b7;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 0px solid white;
+    border-radius: 50%;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    margin: 0 auto;
+    /* behavior: url(js/PIE-1.0.0/PIE.htc);*/
+}
+
+.bc_icon_health {
+    background: #8da2b5;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 0px solid white;
+    border-radius: 50%;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    margin: 0 auto;
+    /* behavior: url(js/PIE-1.0.0/PIE.htc);*/
+}
+
+.bc_home {
+    background: #72706D;
+    font-size: 16px;
+}
+
+.bc_icon,
+.bc_home {
+    border: 0px solid white;
+    border-radius: 50%;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    margin: 0 auto;
+    /*   behavior: url(js/PIE-1.0.0/PIE.htc);*/
+}
+
+.bc_home > .fa-home {
+    margin-top: 4px;
+}
+
+.classtd {
+    padding-bottom: 10px;
+}
+
+</style > <style > .navbar {
+    border-radius: 0;
+}
+
+img {
+    /* Responsive images (ensure images don't scale beyond their parents) */
+    max-width: 100%;
+    /* Part 1: Set a maxium relative to the parent */
+    width: auto\9;
+    /* IE7-8 need help adjusting responsive images */
+    height: auto;
+    /* Part 2: Scale the height according to the width, otherwise you get stretching */
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+black-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+}
+
+
+
+.containerdata {
+    max-width: 940px;
+    _width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#main {
+    margin-bottom: 20px;
+}
+
+
+.containerdata {
+    *zoom: 1;
+    max-width: 940px;
+    _width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.containerdata:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.containerdata:before,
+.containerdata:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+
+.containerdata:after {
+    clear: both;
+}
+
+/*  NYC - Agency Header
+    -------------------
+*/
+
+.agency-header .upper-header-left {
+    width: 25%;
+}
+
+
+.agency-header .small-nyc-logo {
+    height: 15px;
+    width: 40px;
+    margin: 0 10px 0 -1px;
+}
+
+
+.agency-header .upper-header-black-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+}
+
+@media only screen and (max-width: 767px) {
+
+    .agency-header .upper-header-black-title {
+        display: none;
+    }
+}
+
+
+.agency-header .upper-header-padding {
+    width: 50%;
+}
+
+
+.agency-header .upper-header-right {
+    position: absolute;
+    right: 23px;
+    padding-left: 4%;
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+}
+
+@media only screen and (max-width: 767px) {
+
+    .agency-header .upper-header-right {
+        display: none;
+    }
+}
+
+
+.agency-header .upper-header-search {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 5px;
+}
+
+
+.agency-header .upper-header-search a {
+    color: #fff;
+}
+
+.agency-header .upper-header-three-one-one {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+
+.agency-header .upper-header-three-one-one a {
+    color: #fff;
+}
+
+
+.lt-ie8 header .logo {
+    position: relative;
+}
+
+
+.agency-header .upper-header-black {
+    background: #000;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.epatitle {
+    font-family: Helvetica;
+    font-size: 27px;
+}
+
+.epabody {
+    font-family: Lato,Sarabun,Source Sans Pro,Georgia,Merriweather,Montserrat,Cambria,"Times New Roman",Times,serif;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 25.52px;
+}

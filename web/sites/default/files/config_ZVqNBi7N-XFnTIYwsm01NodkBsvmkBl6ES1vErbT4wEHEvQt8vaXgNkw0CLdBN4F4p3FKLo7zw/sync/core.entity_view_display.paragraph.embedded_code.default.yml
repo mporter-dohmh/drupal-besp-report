@@ -1,0 +1,20 @@
+uuid: 7c186919-c575-4ade-a87c-47accf4bfa3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_code.field_code
+    - paragraphs.paragraphs_type.embedded_code
+id: paragraph.embedded_code.default
+targetEntityType: paragraph
+bundle: embedded_code
+mode: default
+content:
+  field_code:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

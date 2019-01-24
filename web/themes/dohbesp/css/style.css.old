@@ -1,0 +1,468 @@
+ /**
+ * Place your custom styles here.
+ */
+
+body.page-node-type-report-page, .view--report-view {
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    /*font-family: 'Heebo', sans-serif;*/
+    color: #000;
+}
+
+h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    color: #0a5796;
+}
+
+a,
+a:hover {
+    border-bottom: none;
+}
+
+.btn-group-vertical > .btn-group:after,
+.btn-group-vertical > .btn-group:before,
+.btn-toolbar:after,
+.btn-toolbar:before,
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.modal-header:after,
+.modal-header:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+    content: " ";
+    display: table;
+}
+
+nav .container-fluid {
+    max-width: 1065px;
+}
+
+section .container-fluid {
+    max-width: 1065px;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    width: 100%;
+    z-index: 11111;
+}
+
+.navbar-fixed-top * {
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+.navbar-inverse {
+    background-color: #44689d;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+    min-height: 40px;
+    font-size: 14px;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-text {
+    color: #fff;
+}
+
+.navbar-header {
+    line-height: 60px;
+}
+
+.navbar-brand {
+    font-size: .75rem;
+    line-height: 30px;
+    color: white;
+}
+
+.navbar-text {
+    margin: 0;
+    /* margin-right: 0; */
+    font-size: 12px;
+}
+
+.navbar-nav {
+    /*flex-direction: row;
+            align-content: center;
+            align-items: center;
+            align-self: center;*/
+    float: right;
+    line-height: 60px;
+    display: block;
+    width: 60%;
+}
+
+.navbar-nav li {
+    float: left;
+    line-height: 60px;
+}
+
+.navbar-nav > li > a {
+    line-height: 60px;
+    padding: 0;
+}
+
+.navbar-nav:before {
+    display: table;
+    content: '';
+}
+
+.navbar-nav li {
+    padding: 0 3%;
+}
+
+/* Slider Styles */
+
+#slider .slider-text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#slider h1, 
+#slider h2, 
+#slider h3, 
+#slider h4, 
+#slider h5, 
+#slider h6 {
+    color: #fff;
+    margin: 0;
+}
+
+#slider h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#slider h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+#slider h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+#slider span {
+    display: block;
+}
+
+
+#home_section {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(assets/section-images/comm-air-survey-08-15-1.jpg) center/cover no-repeat fixed;
+}
+
+#full-width-background {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(assets/section-images/section-full-background.jpg) center/cover no-repeat fixed;
+}
+
+#home_section .grid__item {
+    flex-direction: column;
+}
+
+#home_section span {
+    display: block;
+}
+
+#home_section h1,
+#home_section h2,
+#home_section h3 {
+    color: #fff;
+    margin: 0;
+}
+
+#home_section h1 {
+    padding: 5px 0;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#home_section h2 {
+    font-size: 1.5rem;
+
+}
+
+#home_section h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 50%;
+}
+
+section h2 + p:first-of-type {
+    border-top: 1px solid #0a5796;
+    padding-top: 10px;
+}
+
+section.field--name-field-column-1-bg {
+    background: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.fp-section.fp-table,
+.fp-slide.fp-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section.field--name-field-column-1-bg .fp-section.fp-table {
+    height: auto;
+}
+
+section section h2 {
+    text-align: center;
+    width: 100%;
+}
+
+section section h2 + p:first-of-type {
+    border-top: none;
+}
+
+.fp-tableCell {
+    /*display: table-cell;*/
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.paddingfromtop {
+    padding-top: 25px;
+}
+
+section p {
+    /*font-size: 0.875rem;*/
+}
+
+.col-lg-6 .table {
+    margin: 0 15px;
+}
+
+.col-lg-6 .table td {
+    padding-right: 15px;
+}
+
+/*
+tbody {
+    font-size: .875rem;
+}
+*/
+
+.table thead th {
+    background: #72706d;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: none;
+    font-weight: 300;
+    padding: .25rem .75rem;
+}
+
+.table-striped td {
+    border-top: none;
+}
+
+#accordion .card {
+    border: none;
+    border-radius: 0;
+}
+
+
+.field--name-field-column-1-bg {
+    background: #333;
+    color: #fff;
+}
+
+.field--name-field-column-1-bg h1,
+.field--name-field-column-1-bg h2 {
+    color: #fff;
+}
+
+/* core stuff to hide */
+
+h1.page-header,
+nav.tabs {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #000;
+    padding: 35px 0 60px 0;
+    clear: both;
+}
+
+footer .container {
+    max-width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+footer .footer-links {
+    width: 76%;
+    margin-right: 0;
+}
+
+.span9 {
+    width: 74.46809%;
+    float: left;
+    margin-right: 2.12766%;
+    display: inline;
+}
+
+@media only screen and (min-width: 960px) footer .footer-links a {
+    width: 30%;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    float: left;
+    margin-right: 2.12766%;
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: 486px) footer .span3:last-child {
+    position: absolute;
+    right: 20px;
+    margin-top: 8px;
+}
+
+.span3:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+footer .span3 {
+    width: 220px;
+    margin-top: 10px;
+}
+
+.span3 {
+    width: 23.40426%;
+    float: left;
+    margin-right: 2.12766%;
+    display: inline;
+}
+
+footer .logo-nyc {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 93px;
+    height: 31px;
+    display: block;
+    background-image: url(/assets/header/EPHTImages/nyc_white.png);
+    background-size: 93px 31px;
+    float: left;
+    margin-right: 10px;
+    color: #fff;
+}
+
+footer .copyright {
+    color: #fff;
+    font-size: 10px;
+}
+
+footer .copyright p {
+    margin: 0;
+    line-height: 14px;
+    float: left;
+}
+
+footer .copyright a {
+    color: #fff;
+}
