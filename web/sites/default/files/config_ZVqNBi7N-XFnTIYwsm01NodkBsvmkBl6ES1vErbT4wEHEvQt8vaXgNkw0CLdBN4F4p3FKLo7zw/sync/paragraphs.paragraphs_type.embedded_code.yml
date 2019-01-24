@@ -1,9 +1,0 @@
-uuid: 94a811f0-23f6-4df0-8df7-defb33ed63a3
-langcode: en
-status: true
-dependencies: {  }
-id: embedded_code
-label: 'Embedded Code'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
