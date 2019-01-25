@@ -1,0 +1,23 @@
+uuid: 5b269bf5-c23e-4d57-a916-62cfb74fa30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_label_color
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_slide_label_color
+field_name: field_slide_label_color
+entity_type: paragraph
+bundle: slide
+label: 'Label Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Black
+default_value_callback: ''
+settings: {  }
+field_type: list_string

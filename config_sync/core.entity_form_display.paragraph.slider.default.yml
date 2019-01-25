@@ -1,0 +1,37 @@
+uuid: 76b6b72f-3b54-47a1-ae61-0e858764049b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_slides
+    - field.field.paragraph.slider.field_slideshow_transition
+    - paragraphs.paragraphs_type.slider
+  module:
+    - paragraphs
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_slides:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_slideshow_transition:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: ad592459-f169-4095-a57f-bf855be6392c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.two_column_section.field_section_title
+    - node.type.two_column_section
+  module:
+    - user
+id: node.two_column_section.teaser
+targetEntityType: node
+bundle: two_column_section
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_section_title: true

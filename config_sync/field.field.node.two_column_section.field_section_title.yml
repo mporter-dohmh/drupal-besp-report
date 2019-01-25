@@ -1,0 +1,21 @@
+uuid: ec59c092-c879-4f6a-a9b2-a11eb851e0e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_title
+    - node.type.two_column_section
+  module:
+    - text
+id: node.two_column_section.field_section_title
+field_name: field_section_title
+entity_type: node
+bundle: two_column_section
+label: 'Section Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,24 @@
+uuid: 23a6fadf-3583-4df9-baac-ff51654b0f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_title
+    - node.type.one_column_section
+  module:
+    - text
+id: node.one_column_section.field_section_title
+field_name: field_section_title
+entity_type: node
+bundle: one_column_section
+label: 'Section Title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'This is the section title'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

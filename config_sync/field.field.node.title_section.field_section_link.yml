@@ -1,0 +1,19 @@
+uuid: e1376fec-1bbb-47d3-9caf-f9f177c97aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section_link
+    - node.type.title_section
+id: node.title_section.field_section_link
+field_name: field_section_link
+entity_type: node
+bundle: title_section
+label: 'Section Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

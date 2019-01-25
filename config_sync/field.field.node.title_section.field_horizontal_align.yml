@@ -1,0 +1,23 @@
+uuid: 6f177e1b-6099-4ff3-ac3c-a473e7c68daa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horizontal_align
+    - node.type.title_section
+  module:
+    - options
+id: node.title_section.field_horizontal_align
+field_name: field_horizontal_align
+entity_type: node
+bundle: title_section
+label: 'Horizontal Align'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+uuid: 1b7c401c-7d1b-4956-bd09-fca68d79fdf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dohbesp
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: dohbesp_help
+theme: dohbesp
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

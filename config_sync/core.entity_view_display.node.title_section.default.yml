@@ -1,0 +1,77 @@
+uuid: 611d5627-f21c-4034-be4c-cf8e629d9ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.title_section.field_horizontal_align
+    - field.field.node.title_section.field_report
+    - field.field.node.title_section.field_section_link
+    - field.field.node.title_section.field_tile_background_image
+    - field.field.node.title_section.field_title_background_color
+    - field.field.node.title_section.field_title_section_content
+    - field.field.node.title_section.field_vertical_align
+    - field.field.node.title_section.field_weight
+    - node.type.title_section
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.title_section.default
+targetEntityType: node
+bundle: title_section
+mode: default
+content:
+  field_horizontal_align:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_section_link:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tile_background_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_background_color:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_title_section_content:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vertical_align:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_report: true
+  field_weight: true

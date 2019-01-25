@@ -1,0 +1,25 @@
+uuid: be2d59f2-cd25-4a52-855d-43af21288c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.report_header
+id: node.report_header.field_weight
+field_name: field_weight
+entity_type: node
+bundle: report_header
+label: Weight
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: -999
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

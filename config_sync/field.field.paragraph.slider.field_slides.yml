@@ -1,0 +1,49 @@
+uuid: 8f9289ea-54d1-4f42-86bb-c2731aff05cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides
+    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: paragraph.slider.field_slides
+field_name: field_slides
+entity_type: paragraph
+bundle: slider
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slide: slide
+    target_bundles_drag_drop:
+      accordion:
+        weight: 8
+        enabled: false
+      accordion_item:
+        weight: 9
+        enabled: false
+      embed:
+        weight: 10
+        enabled: false
+      image:
+        weight: 11
+        enabled: false
+      slide:
+        enabled: true
+        weight: 12
+      slider:
+        weight: 13
+        enabled: false
+      text_block:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

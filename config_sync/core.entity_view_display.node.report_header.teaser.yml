@@ -1,0 +1,20 @@
+uuid: f0a8e47f-d91c-40c1-b8f0-c1b5e71e4585
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.report_header
+  module:
+    - user
+id: node.report_header.teaser
+targetEntityType: node
+bundle: report_header
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

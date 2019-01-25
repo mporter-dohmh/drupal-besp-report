@@ -1,0 +1,9 @@
+uuid: bd20517f-750e-4f4e-97f8-c0a62e15c604
+langcode: en
+status: true
+dependencies: {  }
+id: slider
+label: Slideshow
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

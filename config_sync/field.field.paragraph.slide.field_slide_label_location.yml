@@ -1,0 +1,23 @@
+uuid: e8b96e85-c8a1-4e94-b7bc-11803670613a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_label_location
+    - paragraphs.paragraphs_type.slide
+  module:
+    - options
+id: paragraph.slide.field_slide_label_location
+field_name: field_slide_label_location
+entity_type: paragraph
+bundle: slide
+label: 'Label Location'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: slide-text-upper-left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

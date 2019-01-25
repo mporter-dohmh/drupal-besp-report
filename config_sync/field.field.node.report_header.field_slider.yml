@@ -1,0 +1,49 @@
+uuid: ef4b3900-9466-49e0-ab15-febd956b4031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider
+    - node.type.report_header
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: node.report_header.field_slider
+field_name: field_slider
+entity_type: node
+bundle: report_header
+label: Slider
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider: slider
+    target_bundles_drag_drop:
+      accordion:
+        weight: 8
+        enabled: false
+      accordion_item:
+        weight: 9
+        enabled: false
+      embed:
+        weight: 10
+        enabled: false
+      image:
+        weight: 11
+        enabled: false
+      slide:
+        weight: 12
+        enabled: false
+      slider:
+        enabled: true
+        weight: 13
+      text_block:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

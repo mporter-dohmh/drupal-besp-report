@@ -1,0 +1,23 @@
+uuid: 9590a2db-79c8-4a8d-8c7a-71a34b36c42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slideshow_transition
+    - paragraphs.paragraphs_type.slider
+  module:
+    - options
+id: paragraph.slider.field_slideshow_transition
+field_name: field_slideshow_transition
+entity_type: paragraph
+bundle: slider
+label: Transition
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: arrows
+default_value_callback: ''
+settings: {  }
+field_type: list_string

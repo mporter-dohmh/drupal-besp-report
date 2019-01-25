@@ -1,0 +1,23 @@
+uuid: 0ddea687-e921-4e0a-842a-13ea7a7e3bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.two_column_section
+id: node.two_column_section.field_weight
+field_name: field_weight
+entity_type: node
+bundle: two_column_section
+label: Weight
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

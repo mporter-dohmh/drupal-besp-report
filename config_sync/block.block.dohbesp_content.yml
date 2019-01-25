@@ -1,0 +1,22 @@
+uuid: ea7a96ca-049f-4ab9-b731-abc8b6c24b65
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dohbesp
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dohbesp_content
+theme: dohbesp
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

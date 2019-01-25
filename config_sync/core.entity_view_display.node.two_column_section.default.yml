@@ -1,0 +1,62 @@
+uuid: 6999c5c0-b721-43ec-91df-101cf6d8f56e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.two_column_section.field_left_column
+    - field.field.node.two_column_section.field_report
+    - field.field.node.two_column_section.field_right_column
+    - field.field.node.two_column_section.field_section_link
+    - field.field.node.two_column_section.field_section_title
+    - field.field.node.two_column_section.field_weight
+    - node.type.two_column_section
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.two_column_section.default
+targetEntityType: node
+bundle: two_column_section
+mode: default
+content:
+  field_left_column:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_right_column:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_section_link:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_section_title:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_report: true
+  field_weight: true

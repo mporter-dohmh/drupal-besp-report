@@ -1,0 +1,23 @@
+uuid: 903bff6a-c650-4df5-835b-d2563d36cd7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_background_color
+    - node.type.title_section
+  module:
+    - options
+id: node.title_section.field_title_background_color
+field_name: field_title_background_color
+entity_type: node
+bundle: title_section
+label: 'Background Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Black
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: f17531c0-dd5c-4af6-93cd-fffa328d0abe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Report Header'
+type: report_header
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

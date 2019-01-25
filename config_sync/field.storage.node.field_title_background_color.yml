@@ -1,0 +1,27 @@
+uuid: 90b291dd-ff5f-4959-8920-fce4d8a7dcc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_title_background_color
+field_name: field_title_background_color
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Black
+      label: Black
+    -
+      value: White
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: b72c5920-86cb-4e4d-84bd-e363875f3b0a
+name: 'Drupal Dev 2'
+mail: mporter1@health.nyc.gov
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

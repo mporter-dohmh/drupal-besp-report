@@ -1,0 +1,20 @@
+uuid: 645500ef-d73b-4e2c-b7b8-9f29db5d50c4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dohbesp
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: dohbesp_local_actions
+theme: dohbesp
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

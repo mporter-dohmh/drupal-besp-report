@@ -1,0 +1,21 @@
+uuid: 8f278fc3-ed32-473f-b32a-a510203aaf7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table_row
+    - paragraphs.paragraphs_type.table
+  module:
+    - text
+id: paragraph.table.field_table_row
+field_name: field_table_row
+entity_type: paragraph
+bundle: table
+label: 'Table Row'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

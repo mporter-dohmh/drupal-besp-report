@@ -1,0 +1,9 @@
+uuid: 941ce75d-614c-474a-8b46-b6c485a0af96
+langcode: en
+status: true
+dependencies: {  }
+id: embed
+label: Embed
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

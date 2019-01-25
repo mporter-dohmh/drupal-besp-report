@@ -1,0 +1,33 @@
+uuid: 4626b0c5-2917-425a-ac39-83a373973848
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_slide_label_location
+field_name: field_slide_label_location
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: slide-text-upper-left
+      label: 'Upper Left'
+    -
+      value: slide-text-upper-right
+      label: 'Upper Right'
+    -
+      value: slide-text-lower-left
+      label: 'Lower Left'
+    -
+      value: slide-text-lower-right
+      label: 'Lower Right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

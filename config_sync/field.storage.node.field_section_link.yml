@@ -1,0 +1,21 @@
+uuid: 3e1a3eb3-0d83-4fb4-91b2-abf8dad5f5a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_section_link
+field_name: field_section_link
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

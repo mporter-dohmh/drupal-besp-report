@@ -1,0 +1,21 @@
+uuid: e572d0fe-ce19-405e-91c4-69e79a7c8c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table_header
+    - paragraphs.paragraphs_type.table
+  module:
+    - text
+id: paragraph.table.field_table_header
+field_name: field_table_header
+entity_type: paragraph
+bundle: table
+label: 'Table Header'
+description: 'This is the top row in the header section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

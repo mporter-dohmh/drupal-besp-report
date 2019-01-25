@@ -1,0 +1,20 @@
+uuid: 8a98c92a-bf25-4c53-8c65-9ba47f7e76aa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dohbesp
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: dohbesp_page_title
+theme: dohbesp
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

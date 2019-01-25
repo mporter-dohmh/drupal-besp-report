@@ -1,0 +1,57 @@
+uuid: f04e5582-ba31-4f3c-8dde-c41c38023d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_left_column
+    - node.type.two_column_section
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.embed
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - entity_reference_revisions
+id: node.two_column_section.field_left_column
+field_name: field_left_column
+entity_type: node
+bundle: two_column_section
+label: 'Left Column'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      embed: embed
+      image: image
+      text_block: text_block
+      slider: slider
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 6
+      accordion_item:
+        weight: 7
+        enabled: false
+      embed:
+        enabled: true
+        weight: 8
+      image:
+        enabled: true
+        weight: 9
+      text_block:
+        enabled: true
+        weight: 10
+      slide:
+        weight: 12
+        enabled: false
+      slider:
+        enabled: true
+        weight: 13
+field_type: entity_reference_revisions

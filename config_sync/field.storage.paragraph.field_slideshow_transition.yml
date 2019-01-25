@@ -1,0 +1,30 @@
+uuid: 0d91c6c3-40ab-4b86-a0f8-c50d3eff8b81
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_slideshow_transition
+field_name: field_slideshow_transition
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: slider-container-arrows
+      label: Arrows
+    -
+      value: slider-container-autoplay
+      label: Autoplay
+    -
+      value: slider-container-arrows-autoplay
+      label: 'Arrows and Autoplay'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
