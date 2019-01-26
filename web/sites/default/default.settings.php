@@ -768,3 +768,17 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+# set database, username, and password
+$databases['default']['default'] = array (
+  'database' => 
+  'username' => 
+  'password' => '
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = $app_root.'/../config_sync';
