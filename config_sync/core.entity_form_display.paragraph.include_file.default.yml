@@ -1,0 +1,25 @@
+uuid: 05b4e82f-aaf7-4f86-964a-06b8ec5c8934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.include_file.field_include_file
+    - paragraphs.paragraphs_type.include_file
+  module:
+    - file
+id: paragraph.include_file.default
+targetEntityType: paragraph
+bundle: include_file
+mode: default
+content:
+  field_include_file:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

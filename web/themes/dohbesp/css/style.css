@@ -294,6 +294,11 @@ section.field--name-field-column-1-bg {
     background-color: #333333;
 }
 
+.black-background p {
+    background-color: #333333;
+}
+
+
 .white-font * {
     color: #fff;
 }
@@ -591,3 +596,48 @@ footer .copyright a {
     margin:auto;
 }
 
+.tab-toolbar {
+    visibility: hidden;
+}
+
+.slider {
+      -webkit-appearance: none;
+      width: 25%;
+      height: 7px;
+      border-radius: 5px;   
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%; 
+      background: #4CAF50;
+      cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+input[type=range] {
+    width: 75%;
+    display: inline-block;
+}
+
+.pollutant-select {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    padding-left: 5px;
+    padding-right: 10px;
+}

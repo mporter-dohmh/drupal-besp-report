@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.embed
     - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.include_file
     - paragraphs.paragraphs_type.slider
     - paragraphs.paragraphs_type.table
     - paragraphs.paragraphs_type.text_block
@@ -33,6 +34,7 @@ settings:
       embed: embed
       image: image
       slider: slider
+      include_file: include_file
       table: table
     target_bundles_drag_drop:
       text_block:
@@ -56,6 +58,9 @@ settings:
       slider:
         enabled: true
         weight: 13
+      include_file:
+        enabled: true
+        weight: 14
       table:
         enabled: true
         weight: 15

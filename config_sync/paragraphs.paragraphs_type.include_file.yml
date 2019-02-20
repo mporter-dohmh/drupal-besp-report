@@ -1,0 +1,9 @@
+uuid: e87d6799-c6a5-4cb9-8243-b2bca7363c80
+langcode: en
+status: true
+dependencies: {  }
+id: include_file
+label: 'Include File'
+icon_uuid: null
+description: 'This will just reference an include file. It is useful for long javascript pieces.'
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: 3a415df1-c629-4901-a589-1007632205fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_include_file
+    - paragraphs.paragraphs_type.include_file
+  module:
+    - file
+id: paragraph.include_file.field_include_file
+field_name: field_include_file
+entity_type: paragraph
+bundle: include_file
+label: 'Include File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: include-files
+  file_extensions: 'txt js csv'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

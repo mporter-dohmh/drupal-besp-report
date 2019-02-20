@@ -1,0 +1,23 @@
+uuid: 0662fe57-df48-435c-8a23-6a99ca3052c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.include_file.field_include_file
+    - paragraphs.paragraphs_type.include_file
+  module:
+    - file
+id: paragraph.include_file.default
+targetEntityType: paragraph
+bundle: include_file
+mode: default
+content:
+  field_include_file:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

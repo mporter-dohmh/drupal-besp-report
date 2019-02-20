@@ -5,11 +5,16 @@ global-styling:
       css/publictracking.css: {}
       css/slick.css: {}
       css/slick-theme.css: {}
+      css/nouislider.min.css: {}
+      css/dygraph.css: {}
 global-scripts:
   version: VERSION
   js:
     js/site.js: {}
     js/slick.min.js: {}
+    js/nouislider.min.js: {}
+    js/dygraph.min.js: {}
+    js/smooth-plotter.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
