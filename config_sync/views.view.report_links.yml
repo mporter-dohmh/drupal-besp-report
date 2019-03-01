@@ -62,8 +62,8 @@ display:
           row_class: ''
           default_row_class: true
           type: ul
-          wrapper_class: item-list
-          class: 'nav navbar-nav navbar-right multiple'
+          wrapper_class: ''
+          class: ''
       row:
         type: fields
         options:
@@ -85,7 +85,7 @@ display:
           alter:
             alter_text: false
             text: '#{{ field_section_link__value|render|trim|replace({" ":"_"}) }}'
-            make_link: true
+            make_link: false
             path: '#{{ field_section_link__value|render|trim|replace({" ":"_",".":""}) }}'
             absolute: false
             external: false
