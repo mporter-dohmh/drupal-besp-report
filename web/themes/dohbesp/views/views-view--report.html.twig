@@ -32,9 +32,78 @@
  * @see template_preprocess_views_view()
  */
 #}
+
+
+<main id="fullpage" class="fullpage-wrapper view--report-view" >
+    <div class="row-fluid hidden-print navbar-fixed-top affix" id="navbar-wrapper">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="iw_component" id="1432060140214" style="display: block">
+                <div class="agency-header">
+                    <div class="upper-header-black">
+                        <div class="containerdata">
+                            <span class="upper-header-left">
+                                <a aria-label="NYC Logo white" href="http://www1.nyc.gov/">
+                                <img alt="NYC" aria-label="NYC Logo white" class="small-nyc-logo" src="{{ theme_path }}/assets/header/EPHTimages/nyc_white.png" /></a>
+                                <img alt="NYC Logo" aria-label="NYC Logo" src="{{ theme_path }}/assets/header/EPHTimages/upper-header-divider.gif" />
+                                <span class="upper-header-black-title">Health</span></span><span class="upper-header-right"><span class="upper-header-three-one-one"><a aria-label="311 Link" href="http://www1.nyc.gov/311/index.page" target="_blank">311</a></span>
+                                <img alt="Search all NYC.gov websites Image" aria-label="Search all NYC.gov websites Image" src="{{ theme_path }}/assets/header/EPHTimages/upper-header-divider.gif" />
+                                <span class="upper-header-search"><a aria-label="Search all NYC.gov websites Link" href="http://www1.nyc.gov/home/search/index.page" name="Search all NYC.gov websites Link" target="_blank">Search all NYC.gov websites</a></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="background-color: #44689d;">
+            <div class="topnav">
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="#home" class="header-link"><i class="fas fa-home"></i></a>
+                    {{ drupal_view('report_links', 'page_1', view.args[0]) }}
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="background-color:#44689d">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>     
+    </div>
+
+    <div class="row-fluid">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+        {{ rows }}
+    </div>
+    <footer>
+    <div class="container">
+    <div class="span9 footer-links"><a href="/nyc-resources/agencies.page">Directory of City Agencies </a><a href="/home/contact-us.page">Contact NYC Government </a><a href="https://a127-ess.nyc.gov">City Employees </a><a href="http://www.nyc.gov/notifynyc">Notify NYC </a><a href="http://a856-citystore.nyc.gov/">CityStore </a><a href="/connect/social-media.page">Stay Connected </a><a href="/connect/mobile-applications.page">NYC Mobile Apps </a><a href="/nyc-resources/nyc-maps.page">Maps </a><a href="/nyc-resources/resident-toolkit.page">Resident Toolkit</a></div>
+
+    <div class="span3"><span class="logo-nyc">NYC</span>
+
+    <form action="/home/search/index.page" class="form-search" method="get"><input class="input-search placeholder" name="search-terms" placeholder="Search" type="text" /><button class="ico-search">Search</button></form>
+
+    <div class="copyright">
+    <p>&nbsp;</p>
+
+    <p>City of New York. 2018 All Rights Reserved,</p>
+
+    <p>NYC is a trademark and service mark of the City of New York</p>
+
+    <p style="display: block; width: 100%;"><a href="/home/privacy-policy.page" title="Privacy Ploicy ">Privacy Policy.</a>&nbsp;<a href="/home/terms-of-use.page" title="Terms of Use">Terms of Use.</a>&nbsp;<a href="http://www.nyc.gov/mopd"><img alt="Learn about services for people with disabilities" height="20" src="themes/dohbesp/assets/footer/accessibility_icon.svg" width="20" /></a></p>
+
+    <p>&nbsp;</p>
+    </div>
+    </div>
+    </div>
+    </footer>
+    {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+    {% endif %}
+</main>
+
     
-<dd>{{ drupal_view('report_links', 'page_1', view.args[0]) }}</dd>
-{{ rows }}
+
 
 
 

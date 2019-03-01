@@ -641,3 +641,60 @@ input[type=range] {
     padding-left: 5px;
     padding-right: 10px;
 }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #44689d;
+  position: relative;
+  min-height:30px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 5px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #44689d;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgb(0,113,188);
+  color: white;
+}
+
+a.header-link:link {
+    color:white;
+    text-decoration:none;
+}
+
+a.header-link:visited {
+    color:white;
+    text-decoration:none;
+}
+
+a.header-link:hover{
+    color:yellow;
+    text-decoration:none;
+}
+
+body {
+    margin-top: 55px;
+}
+        

@@ -10,14 +10,13 @@ h3 {
     display: inline-block;
 }
 
-
 @media print {
     .containerdata {
         *zoom: 1;
-        max-width: 940px;
-        _width: 940px;
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: 1065px;
+        _width: 1065px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -384,15 +383,6 @@ black-title {
 
 
 
-.containerdata {
-    max-width: 940px;
-    _width: 940px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
 
 #main {
     margin-bottom: 20px;
@@ -401,10 +391,10 @@ black-title {
 
 .containerdata {
     *zoom: 1;
-    max-width: 940px;
-    _width: 940px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1065px;
+    _width: 1065px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
