@@ -88,9 +88,7 @@
 function scrollToSection(hash) {
     var x = document.getElementById("myLinks");
     x.style.display = "none";
-    var header = document.getElementById("navbar-wrapper")
     var scrollto = jQuery(hash).position().top;
-    console.log(scrollto);
     jQuery('html, body').animate({
         scrollTop: scrollto
       }, 1200);

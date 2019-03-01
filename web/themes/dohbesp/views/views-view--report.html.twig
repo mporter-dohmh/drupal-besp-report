@@ -58,7 +58,7 @@
             <div class="topnav">
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                    <a href="#home" class="header-link"><i class="fas fa-home"></i></a>
+                    <a href="#" onclick="scrollToSection('main-content');return false;" class="header-link"><i class="fas fa-home"></i></a>
                     {{ drupal_view('report_links', 'page_1', view.args[0]) }}
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
