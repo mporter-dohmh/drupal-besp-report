@@ -738,3 +738,7 @@ footer .form-search .ico-search {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
+
+ul {
+    margin-left: 15px;
+}
