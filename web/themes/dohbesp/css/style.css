@@ -644,7 +644,7 @@ input[type=range] {
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+.topnav #menuLinks {
   display: none;
 }
 
