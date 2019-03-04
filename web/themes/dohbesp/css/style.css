@@ -651,7 +651,7 @@ input[type=range] {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 5px 25px;
+  padding: 5px 5px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -672,9 +672,14 @@ input[type=range] {
   color: white;
 }
 
+li.menu-link-item {
+    list-style-type: none;
+}
+
 a.header-link:link {
     color:white;
     text-decoration:none;
+    margin-left: 5px;
 }
 
 a.header-link:visited {

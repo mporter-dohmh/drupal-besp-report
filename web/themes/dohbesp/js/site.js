@@ -86,7 +86,7 @@
 })(jQuery);
 
 function scrollToSection(hash) {
-    var x = document.getElementById("myLinks");
+    var x = document.getElementById("menuLinks");
     x.style.display = "none";
     var scrollto = jQuery(hash).position().top;
     jQuery('html, body').animate({
@@ -94,8 +94,8 @@ function scrollToSection(hash) {
       }, 1200);
 }
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
+function menuButtonClick() {
+  var x = document.getElementById("menuLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
