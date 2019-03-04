@@ -89,6 +89,13 @@
 
 
 
+{% if node.field_tile_background_image.isempty %}
+    {% set bgurl = "" %}
+{% else %}
+    {% set bgurl = file_url(content.field_tile_background_image.0['#item'].entity.uri.value) %}
+	{% set bg_color = "white-background" %}
+{% endif %}
+
 {%
   set classes = [
     node.bundle|clean_class,
@@ -103,14 +110,9 @@
     font_color
   ]
 %}
-{% if node.field_tile_background_image.isempty %}
-    {% set bgurl = "" %}
-{% else %}
-    {% set bgurl = file_url(content.field_tile_background_image.0['#item'].entity.uri.value) %}
-{% endif %}
 
 <a id="{{ content.field_section_link|render|striptags|trim|replace({" ":"_",".":""}) }}"></a>
-<section{{ attributes.addClass(classes) }} style="background-image:url({{ bgurl }})">
+<section{{ attributes.addClass(classes) }} style="background-image:url({{ bgurl }});background-size:cover;background-repeat:no-repeat">
         <div class="container-fluid fadein-trigger section-title-table ">
             <span class="section-title-content {{ valign }} {{ halign }}">
                 {{ content.field_title_section_content }}
