@@ -84,9 +84,14 @@
     'Left': 'section-title-content-left',
     'Center': 'section-title-content-center'} 
 %}
+{% set halign_margin = {
+    'Left': '15px;',
+    'Center': 'auto;'} 
+%}
+
 {% set valign = valign_classes[content.field_vertical_align[0]['#markup']] %}
 {% set halign = halign_classes[content.field_horizontal_align[0]['#markup']] %}
-
+{% set margin = halign_margin[content.field_horizontal_align[0]['#markup']] %}
 
 
 {% if node.field_tile_background_image.isempty %}
@@ -113,7 +118,7 @@
 
 <a id="{{ content.field_section_link|render|striptags|trim|replace({" ":"_",".":""}) }}"></a>
 <section{{ attributes.addClass(classes) }} style="background-image:url({{ bgurl }});background-size:cover;background-repeat:no-repeat">
-        <div class="container-fluid fadein-trigger section-title-table ">
+        <div class="container-fluid fadein-trigger section-title-table" style="margin:{{ margin }}">
             <span class="section-title-content {{ valign }} {{ halign }}">
                 {{ content.field_title_section_content }}
             </span>

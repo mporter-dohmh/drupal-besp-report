@@ -431,7 +431,7 @@ footer {
 }
 
 footer .container {
-    max-width: 940px;
+    max-width: 1065px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -439,10 +439,6 @@ footer .container {
     position: relative;
 }
 
-footer .footer-links {
-    width: 76%;
-    margin-right: 0;
-}
 
 .span9 {
     width: 74.46809%;
@@ -451,19 +447,14 @@ footer .footer-links {
     display: inline;
 }
 
-@media only screen and (min-width: 960px) footer .footer-links a {
-    width: 30%;
-}
+
 
 footer .footer-links a {
     color: #fff;
     text-decoration: none;
-    display: block;
     font-weight: 700;
-    float: left;
-    margin-right: 2.12766%;
-    padding: 5px 0;
 }
+
 
 @media only screen and (min-width: 486px) footer .span3:last-child {
     position: absolute;
@@ -500,11 +491,13 @@ footer .logo-nyc {
     float: left;
     margin-right: 10px;
     color: #fff;
+	margin-bottom: 5px;
 }
 
 footer .copyright {
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 footer .copyright p {
@@ -698,3 +691,50 @@ body {
     margin-top: 55px;
 }
         
+        
+footer .form-search .input-search {
+    width: 75px;
+    height: 32px;
+    padding: 4px 6px;
+    outline: 0;
+    font-size: 14px;
+    border-radius: 4px 0 0 4px;
+    float: left;
+    border-left: 2px solid #727272;
+    border-top: 2px solid #727272;
+    border-right: none;
+    border-bottom: 2px solid #727272;
+    color: #fff;
+    background-color: #616161
+}
+
+footer .form-search .ico-search {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(/assets/home/images/global/sprite-ico-search.png) no-repeat #616161 left -8px;
+    padding: 0;
+    display: block;
+    width: 24px;
+    height: 32px;
+    border-radius: 0 4px 4px 0;
+    border-right: 2px solid #727272;
+    border-top: 2px solid #727272;
+    border-bottom: 2px solid #727272;
+    border-left: none;
+    cursor: pointer;
+    color: #fff
+}        
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
