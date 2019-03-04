@@ -59,7 +59,7 @@ display:
         type: html_list
         options:
           grouping: {  }
-          row_class: ''
+          row_class: menu-link-item
           default_row_class: true
           type: ul
           wrapper_class: ''
@@ -116,7 +116,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
