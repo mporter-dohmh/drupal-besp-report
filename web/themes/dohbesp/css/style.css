@@ -659,6 +659,7 @@ input[type=range] {
 
 /* Style the hamburger menu */
 .topnav a.icon {
+  padding-right: 30px;
   background: #44689d;
   display: block;
   position: absolute;
