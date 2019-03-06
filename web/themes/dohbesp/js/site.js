@@ -85,10 +85,14 @@
 
 })(jQuery);
 
+
 function scrollToSection(hash) {
     var x = document.getElementById("menuLinks");
     x.style.display = "none";
     var scrollto = jQuery(hash).position().top;
+    if (scrollto  == 0) {
+        scrollto = jQuery(hash).parent().position().top;
+    }
     jQuery('html, body').animate({
         scrollTop: scrollto
       }, 1200);
