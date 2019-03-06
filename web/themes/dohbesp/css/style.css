@@ -275,7 +275,7 @@ section.field--name-field-column-1-bg {
     display: table;
     table-layout: fixed;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .fp-section {
@@ -417,7 +417,7 @@ nav.tabs {
 
 @media (max-width: 700px) {
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -748,3 +748,33 @@ footer .form-search .ico-search {
 ul {
     margin-left: 15px;
 }
+
+.report-row-wrapper {
+    position: relative;
+    height:100%;
+}
+
+.section-nav-buttons {
+    position:absolute;
+    height:50%;
+    left:20px;
+    top:70px;
+    z-index:999
+}
+
+.section-nav-button {
+    font-size:36px;
+    color:rgb(210,210,210);
+}
+
+span.section-nav-button:hover{
+    color:rgb(120,120,120);
+    text-decoration:none;
+}
+
+@media screen and (max-width: 1100px) {
+  .section-nav-buttons {
+    display: none;
+  }
+}
+    

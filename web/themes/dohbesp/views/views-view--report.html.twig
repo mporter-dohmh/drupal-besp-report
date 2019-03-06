@@ -71,7 +71,25 @@
 
     <div class="row-fluid">
         <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-        {{ rows }}
+        {% set totalrows = rows[0]['#rows']|length %}
+        {% for row in rows[0]['#rows'] %}
+            {% set rownum = ( rownum | default(0) ) + 1 %}
+            <div class="report-row-wrapper" id="__section{{ rownum }}">
+                <div class="section-nav-buttons">
+                    {% if rownum > 2 %}
+                        <p><a href='#' onclick="scrollToSection('#__section{{ rownum - 1 }}');return false;" alt="Scroll To Previous Section">
+                            <span class="section-nav-button"><i class="fas fa-chevron-circle-up"></i></span>
+                        </a></p>
+                    {% endif %}
+                    {% if rownum > 1 and rownum < totalrows %}
+                        <p><a  href='#' onclick="scrollToSection('#__section{{ rownum + 1 }}');return false;" alt="Scroll To Next Section">
+                            <span class="section-nav-button"><i class="fas fa-chevron-circle-down"></i></span>
+                        </a></p>
+                    {% endif %}
+                </div>
+                {{ row }}
+            </div>
+        {% endfor %}
     </div>
 
 
