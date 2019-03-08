@@ -772,9 +772,51 @@ span.section-nav-button:hover{
     text-decoration:none;
 }
 
-@media screen and (max-width: 1200px) {
-  .section-nav-buttons {
-    display: none;
-  }
+.section-title-table-left {
+    margin: 15px;
+}
+
+.section-title-table-center {
+    margin: auto;
+}
+
+.nyccas-report-title {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.nyccas-report-subtitle {
+    font-size: 35px;
 }
     
+@media screen and (max-width: 1200px) {
+    .section-nav-buttons {
+        display: none;
+    }
+    .section-title-table-left {
+        margin: 2px;
+        padding-left: 10px;
+    }  
+    .nyccas-report-title {
+        font-size: 36px;
+        margin-top: 15px;
+    }
+
+    .nyccas-report-subtitle {
+        font-size: 28px;
+    }    
+}
+
+@media screen and (max-width: 700px) {
+    .section-title-table-left {
+        padding-left: 3px;
+    }  
+    .nyccas-report-title {
+        font-size: 18px;
+    }
+
+    .nyccas-report-subtitle {
+        font-size: 16px;
+    }
+}
+
