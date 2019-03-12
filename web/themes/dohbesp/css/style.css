@@ -675,6 +675,7 @@ input[type=range] {
 
 li.menu-link-item {
     list-style-type: none;
+    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
 }
 
 a.header-link:link {
