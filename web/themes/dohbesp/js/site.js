@@ -104,5 +104,6 @@ function menuButtonClick() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
+    jQuery(".header-link")[0].focus();
   }
 }
