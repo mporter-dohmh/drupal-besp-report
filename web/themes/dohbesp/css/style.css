@@ -821,3 +821,45 @@ span.section-nav-button:hover{
     }
 }
 
+
+.pollutant-selector {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.pollutant-selector button {
+    width:55px;
+    line-height:50px;
+    border:1px solid black;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    color:rgb(255,255,255);
+    display:inline-block;
+    font-size: 16px;
+}
+.pollutant-selector button.pollutant-selected {
+    opacity:1;
+}
+
+.pollutant-selector button.pollutant-not-selected {
+    opacity:.25;
+    cursor: pointer;
+}
+
+.pollutant-selector button.font-white {
+    color:rgb(255,255,255);
+}
+
+.pollutant-selector button.font-black {
+    color:rgb(0,0,0);
+}
+
+
+@media screen and (max-width: 700px) {
+    .pollutant-selector button {
+        width:45px;
+        line-height:40px;
+        font-size: 14px;
+}

@@ -56,6 +56,40 @@
                     $(this).find('.panel-collapse').attr("id", 'collapse'+index);
                 });
         });
+
+        // add event listeners for all pollutant selectors 
+        // get all elements with class pollutant-selector
+        var pollutantselectors = $('.pollutant-selector');
+        $.each(pollutantselectors, function(i, ps) {
+            $.each(ps.children, function(j, p) {
+                if (p.tagName == 'BUTTON') {
+                    p.onclick = function(evt) {
+                        var selected = false;
+                        var cl = p.classList;
+                        if (!cl.contains("pollutant-selected")) {
+                            selected = p.value;
+                            cl.add("pollutant-selected");
+                            cl.remove("pollutant-not-selected");
+                        }
+                        // deselect all others
+                        var others = p.parentElement.children;
+                        $.each(others,function(k, op) {
+                            if (op.tagName == 'BUTTON' && op != p) {
+                                var cl = op.classList;
+                                cl.remove("pollutant-selected");
+                                cl.add("pollutant-not-selected");
+                            }
+                        });
+                        if (selected) {
+                            
+                            var funcname = ps.id.split('-').join('_') + '_changed'
+                            var fn = window[funcname](selected);
+                        }
+                    };
+                }
+            })
+            
+        });
     });
                       
     /*Drupal.behaviors.myBehavior = {
@@ -84,6 +118,9 @@
   };*/
 
 })(jQuery);
+
+
+
 
 
 function scrollToSection(hash) {
