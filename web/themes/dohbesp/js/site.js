@@ -1,7 +1,7 @@
 (function ($) {
     
     $(document).ready(function(){
-        
+		
         // Navigation Scroller
         $(document).on('click', '.navbar-nav a', function () {
             var hash = $(this).prop("hash");
@@ -59,37 +59,9 @@
 
         // add event listeners for all pollutant selectors 
         // get all elements with class pollutant-selector
-        var pollutantselectors = $('.pollutant-selector');
-        $.each(pollutantselectors, function(i, ps) {
-            $.each(ps.children, function(j, p) {
-                if (p.tagName == 'BUTTON') {
-                    p.onclick = function(evt) {
-                        var selected = false;
-                        var cl = p.classList;
-                        if (!cl.contains("pollutant-selected")) {
-                            selected = p.value;
-                            cl.add("pollutant-selected");
-                            cl.remove("pollutant-not-selected");
-                        }
-                        // deselect all others
-                        var others = p.parentElement.children;
-                        $.each(others,function(k, op) {
-                            if (op.tagName == 'BUTTON' && op != p) {
-                                var cl = op.classList;
-                                cl.remove("pollutant-selected");
-                                cl.add("pollutant-not-selected");
-                            }
-                        });
-                        if (selected) {
-                            
-                            var funcname = ps.id.split('-').join('_') + '_changed'
-                            var fn = window[funcname](selected);
-                        }
-                    };
-                }
-            })
-            
-        });
+        //var pollutantselectors = $('.pollutant-selector');
+        //$.each(pollutantselectors, function(i, ps) {
+        //});
     });
                       
     /*Drupal.behaviors.myBehavior = {
@@ -118,6 +90,41 @@
   };*/
 
 })(jQuery);
+
+function setSelectors(pollutantSelectorDiv) {
+	var ps=jQuery("#"+pollutantSelectorDiv)[0];
+	// jQuery.each(ps.children, function(j, p) {
+	for (var i=0; i<ps.children.length; i++) {
+		var p =ps.children[i];
+		if (p.tagName == 'BUTTON') {
+			p.onclick = function(evt) {
+				var btn = evt.currentTarget;
+				var selected = false;
+				var cl = btn.classList;
+				if (!cl.contains("pollutant-selected")) {
+					selected = btn.value;
+					cl.add("pollutant-selected");
+					cl.remove("pollutant-not-selected");
+				}
+				// deselect all others
+				var others = btn.parentElement.children;
+				for (var j=0; j<others.length; j++) {
+					var op=others[j];
+					if (op.tagName == 'BUTTON' && op != btn) {
+						var cl = op.classList;
+						cl.remove("pollutant-selected");
+						cl.add("pollutant-not-selected");
+					}
+				}
+				if (selected) {
+					var funcname = ps.id.split('-').join('_') + '_changed'
+					var fn = window[funcname](selected);
+				}
+			};
+		}
+	}
+}	
+
 
 
 
