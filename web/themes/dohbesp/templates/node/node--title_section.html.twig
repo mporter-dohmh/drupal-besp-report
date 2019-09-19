@@ -117,9 +117,10 @@
 
 <a id="{{ content.field_section_link|render|striptags|trim|replace({" ":"_",".":""}) }}"></a>
 <section{{ attributes.addClass(classes) }} style="background-image:url({{ bgurl }});background-size:cover;background-repeat:no-repeat">
-        <div class="container-fluid fadein-trigger section-title-table section-title-table-{{ halign }}">
-            <span class="section-title-content {{ valign }} section-title-content-{{ halign }}">
-                {{ content.field_title_section_content }}
-            </span>
-        </div>
+	<h1 class="visually-hidden">Test Heading</h1>
+	<div class="container-fluid fadein-trigger section-title-table section-title-table-{{ halign }}">
+		<span class="section-title-content {{ valign }} section-title-content-{{ halign }}">
+			{{ content.field_title_section_content }}
+		</span>
+	</div>
 </section>

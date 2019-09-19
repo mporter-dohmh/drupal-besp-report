@@ -46,8 +46,8 @@
                                 <img alt="NYC" aria-label="NYC Logo white" class="small-nyc-logo" src="{{ theme_path }}/assets/header/EPHTimages/nyc_white.png" /></a>
                                 <img alt="NYC Logo" aria-label="NYC Logo" src="{{ theme_path }}/assets/header/EPHTimages/upper-header-divider.gif" />
                                 <a href="https://www1.nyc.gov/site/doh/index.page"><span class="upper-header-black-title">Health</span></a></span><span class="upper-header-right"><span class="upper-header-three-one-one"><a aria-label="311 Link" href="http://www1.nyc.gov/311/index.page" target="_blank">311</a></span>
-                                <img alt="Search all NYC.gov websites Image" aria-label="Search all NYC.gov websites Image" src="{{ theme_path }}/assets/header/EPHTimages/upper-header-divider.gif" />
-                                <span class="upper-header-search"><a aria-label="Search all NYC.gov websites Link" href="http://www1.nyc.gov/home/search/index.page" name="Search all NYC.gov websites Link" target="_blank">Search all NYC.gov websites</a></span>
+                                <img alt="Search all NYC.gov websites" aria-label="Search all NYC.gov websites" src="{{ theme_path }}/assets/header/EPHTimages/upper-header-divider.gif" />
+                                <span class="upper-header-search"><a aria-label="Search all NYC.gov websites" href="http://www1.nyc.gov/home/search/index.page" name="Search all NYC.gov websites" target="_blank">Search all NYC.gov websites</a></span>
                             </span>
                         </div>
                     </div>
@@ -58,12 +58,16 @@
             <div class="topnav">
                 <!-- Navigation links (hidden by default) -->
                 <div id="menuLinks">
-                    <a href="#" onclick="scrollToSection('main-content');return false;" class="header-link" style="padding-left:17px;"><i class="fas fa-home"></i></a>
+                    <a href="#" onclick="scrollToSection('main-content');return false;" class="header-link" style="padding-left:17px;">
+						<i aria-hidden="true" class="fas fa-home"></i>
+						<span class="sr-only">Report home</span>
+					</a>
                     {{ drupal_view('report_links', 'page_1', view.args[0]) }}
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="menuButtonClick()">
-                    <i class="fa fa-bars"></i>
+					<i aria-hidden="true" class="fa fa-bars"></i>
+					<span class="sr-only">Report Menu</span>
                 </a>
             </div>
         </div>     
@@ -77,13 +81,19 @@
             <div class="report-row-wrapper" id="__section{{ rownum }}">
                 <div class="section-nav-buttons">
                     {% if rownum > 2 %}
-                        <p><a href='#' onclick="scrollToSection('#__section{{ rownum - 1 }}');return false;" alt="Scroll To Previous Section">
-                            <span class="section-nav-button"><i class="fas fa-chevron-circle-up"></i></span>
+                        <p><a href='#' onclick="scrollToSection('#__section{{ rownum - 1 }}');return false;" >
+                            <span class="section-nav-button">
+								<i aria-hidden="true" class="fas fa-chevron-circle-up"></i>
+								<span class="sr-only">Scroll to previous page</span>
+							</span>
                         </a></p>
                     {% endif %}
                     {% if rownum > 1 and rownum < totalrows %}
-                        <p><a  href='#' onclick="scrollToSection('#__section{{ rownum + 1 }}');return false;" alt="Scroll To Next Section">
-                            <span class="section-nav-button"><i class="fas fa-chevron-circle-down"></i></span>
+                        <p><a  href='#' onclick="scrollToSection('#__section{{ rownum + 1 }}');return false;">
+                            <span class="section-nav-button">
+								<i aria-hidden="true" class="fas fa-chevron-circle-down"></i>
+								<span class="sr-only">Scroll to next page</span>
+							</span>
                         </a></p>
                     {% endif %}
                 </div>
@@ -117,7 +127,7 @@
                 <div class="col-lg-3 col-12 col-sm-6">
                         <span class="logo-nyc" style="background-image:url({{ theme_path }}/assets/header/EPHTimages/nyc_white.png)">NYC</span>
                         <form class="form-search" method="get" action="http://www1.nyc.gov//home/search/index.page">
-                            <input type="text" placeholder="Search" class="input-search placeholder" name="search-terms"><button class="ico-search" style="background:url({{ theme_path }}/assets/footer/sprite-ico-search.png) no-repeat #616161 left -8px;">Search</button>
+                            <input type="text" placeholder="Search" class="input-search placeholder" name="search-terms" aria-label="NYC Search"><button class="ico-search" style="background:url({{ theme_path }}/assets/footer/sprite-ico-search.png) no-repeat #616161 left -8px;">Search</button>
                         </form>
 
                         <div class="copyright">

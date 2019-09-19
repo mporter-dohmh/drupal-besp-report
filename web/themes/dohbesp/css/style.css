@@ -518,6 +518,7 @@ footer .copyright a {
 
 .ui-accordion-header {
     font-size: 18px;
+	line-height: 1.75;
 }
 
 .ui-accordion  {
@@ -821,7 +822,6 @@ span.section-nav-button:hover{
     }
 }
 
-
 .pollutant-selector {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0px;
@@ -863,3 +863,4 @@ span.section-nav-button:hover{
         line-height:40px;
         font-size: 14px;
 }
+
