@@ -1,0 +1,37 @@
+[1mdiff --git a/web/themes/dohbesp/css/style.css b/web/themes/dohbesp/css/style.css[m
+[1mindex 1ca5ddcf..115d7875 100644[m
+[1m--- a/web/themes/dohbesp/css/style.css[m
+[1m+++ b/web/themes/dohbesp/css/style.css[m
+[36m@@ -334,8 +334,8 @@[m [msection section h2 + p:first-of-type {[m
+ [m
+ section p, section li, .field--type-text  {[m
+     /*font-size: 0.875rem;*/[m
+[31m-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;[m
+[31m-    font-size: 17px;[m
+[32m+[m[32m    font-family: Arial,Helvetica;[m
+[32m+[m[32m    font-size: 1.25em;[m
+     color: #333;[m
+ }[m
+ [m
+[36m@@ -349,8 +349,8 @@[m [msection p[m
+       [m
+ [m
+ .field--name-field-section-title {[m
+[31m-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;[m
+[31m-    font-size: 24px;[m
+[32m+[m[32m    font-family: Arial,Helvetica;[m
+[32m+[m[32m    font-size: 1.75em;[m
+     background: #fff;[m
+     color: #333;[m
+     margin-bottom: 15px;[m
+[36m@@ -512,8 +512,8 @@[m [mfooter .copyright a {[m
+ [m
+ .accordion-title {[m
+     width: 100%;[m
+[31m-    font-family: Nunito, Quicksand, “Helvetica Neue”, Helvetica, Arial, sans-serif;[m
+[31m-    font-size: 18px;[m
+[32m+[m[32m    font-family: Arial,Helvetica;[m
+[32m+[m[32m    font-size: 1.25em;[m
+ }[m
+ [m
+ .ui-accordion-header {[m

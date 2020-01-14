@@ -334,8 +334,8 @@ section section h2 + p:first-of-type {
 
 section p, section li, .field--type-text  {
     /*font-size: 0.875rem;*/
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 17px;
+    font-family: Arial,Helvetica;
+    font-size: 1.25em;
     color: #333;
 }
 
@@ -349,8 +349,8 @@ section p
       
 
 .field--name-field-section-title {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 24px;
+    font-family: Arial,Helvetica;
+    font-size: 1.75em;
     background: #fff;
     color: #333;
     margin-bottom: 15px;
@@ -512,8 +512,8 @@ footer .copyright a {
 
 .accordion-title {
     width: 100%;
-    font-family: Nunito, Quicksand, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: Arial,Helvetica;
+    font-size: 1.25em;
 }
 
 .ui-accordion-header {
