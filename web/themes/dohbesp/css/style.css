@@ -766,11 +766,11 @@ ul {
 
 .section-nav-button {
     font-size:36px;
-    color:rgb(210,210,210);
+    color:rgb(125,125,125);
 }
 
 span.section-nav-button:hover{
-    color:rgb(120,120,120);
+    color:rgb(50,50,50);
     text-decoration:none;
 }
 
@@ -862,5 +862,10 @@ span.section-nav-button:hover{
         width:45px;
         line-height:40px;
         font-size: 14px;
+	}
 }
 
+.ui-accordion-header-active {
+	background-color: #004D99;
+	border-color: #004D99;
+}
