@@ -275,7 +275,6 @@ section.field--name-field-column-1-bg {
     display: table;
     table-layout: fixed;
     width: 100%;
-    height: 100vh;
 }
 
 .fp-section {
@@ -767,6 +766,8 @@ ul {
 .section-nav-button {
     font-size:36px;
     color:rgb(125,125,125);
+	display: none;
+	visibility: hidden;
 }
 
 span.section-nav-button:hover{
@@ -868,4 +869,38 @@ span.section-nav-button:hover{
 .ui-accordion-header-active {
 	background-color: #004D99;
 	border-color: #004D99;
+}
+
+.key-finding {
+  border-color: #c5d7ed;
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(75,75,75);
+  font-family:Arial,Helvetica;
+  font-size:1.1em;
+  background-color:#ecf2f9;
+  padding-left:30px;
+  padding-right:30px;
+  margin-bottom:15px;
+  border-radius:25px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding=right:15px;
+}
+
+.key-finding-title {
+  font-size:1.25em;
+  font-weight: bold;
+  margin-bottom:15px;
+  color: rgb(0,0,0);
+}
+
+.key-finding-bullets {
+  color: rgb(100,100,100);
+  font-size:1.1em;
+}
+
+.key-finding-table {
+	width: 100%;
+	max-width: 300px;
 }
